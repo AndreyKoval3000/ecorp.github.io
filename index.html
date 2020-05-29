@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Corp.</title>
+</head>
+<body>
+    <header>
+        <div class = "btn">
+            <ul>
+                <li><strong><a href="#gamebox">GameBox</a></strong></li>
+                <li><strong><a href="#vice">Vice</a></strong></li>
+                <li><strong><a href="#e-os">E-OS</a></strong></li>
+            </ul>
+            <button id="menu_btn"></button>
+        </div>
+        <nav id = "menu" class="base_menu">
+            <h3 id = "header">Наши продукты</h3>
+            <ul>
+                <li><strong><a href="#gamebox">GameBox</a></strong></li>
+                <li><strong><a href="#vice">Vice</a></strong></li>
+                <li><strong><a href="#e-os">E-OS</a></strong></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img class="logo" src="img/logo.png">
+        <h2 class="logo_text">CORP</h2>
+        <hr>
+        <p class="main_text">Мы изменим мир...</p>
+        <hr>
+        <div class="container">
+            <article id="gamebox"class="card">
+                <img src="img/GameBox v4.png">
+                <div class="text">
+                    <p>GameBox - самая мощная в мире игровая консоль</p>
+                    <a href="gamebox.html">Подробнее...</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="img/M.A.R.S.jpg">
+                <div class="text">
+                    <p>M.A.R.S - эксклюзив для лучшей игровой консоли GameBox</p>
+                </div>
+            </article>
+            <article id="vice"class="card">
+                <img src="img/Vice_logo.png">
+                <div class="text">
+                    <p>Vice - полностью анонимный мессенджер.</p>
+                    <a href="vice.html">Подробнее...</a>
+                </div>
+            </article>
+            <article id="e-os"class="card">
+                <img src="img/E-OS.png">
+                <div class="text">
+                    <p>E-OS - лучшая операционная система.</p>
+                    <a href="e-os.html">Подробнее...</a>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>Автор проекта: Ковалёв Андрей Романович</p>
+        <cite>© E corp.</cite>
+    </footer>
+    <script>
+        "use strict"
+        menu_btn.addEventListener("click",fOpen)
+        function fOpen() {
+            menu.classList.toggle("menu_open")
+        }
+    </script>
+</body>
+</html>
+
+<!-- Извините за ужасный html и css. -->
